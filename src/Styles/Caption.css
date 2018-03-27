@@ -1,0 +1,18 @@
+caption-heading {
+  font-family: "Croissant One", cursive;
+  font-size: 300%;
+  color: blue;
+}
+
+caption-subheading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 125%;
+  color: white;
+  background: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+p {
+  line-height: 140%;
+}

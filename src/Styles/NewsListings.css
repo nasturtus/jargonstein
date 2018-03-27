@@ -1,0 +1,40 @@
+* {
+  border: 100px;
+}
+.grid-item-jargon-explanation-newsListings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.grid-item-jargon {
+  margin-top: 50px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+}
+
+.grid-item-explanation {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 150%;
+}
+
+button {
+  position: fixed;
+  height: 50px;
+  width: 200px;
+  top: 700px;
+  right: 350px;
+  background: yellow;
+  border: solid 5px black;
+  color: black;
+  font-size: 100%;
+}
+
+button:hover {
+  background: black;
+  color: yellow;
+}
