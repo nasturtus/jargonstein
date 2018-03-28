@@ -12,9 +12,9 @@ class Caption extends Component {
 
   render() {
     return (
-      <div>
-        <p className="caption-p">
-          <caption-heading>{this.state.heading}.</caption-heading>
+      <div className="caption-div">
+        <p>
+          <caption-heading>{this.state.heading}</caption-heading>
         </p>
         <p>
           <caption-subheading>{this.state.subheading}</caption-subheading>

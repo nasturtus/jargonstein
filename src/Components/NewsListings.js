@@ -37,7 +37,11 @@ class NewsListings extends Component {
             return (
               <div>
                 <li key={index} className="newslistings-article">
-                  <a href={article.url} className="newslistings-link"target="_blank">
+                  <a
+                    href={article.url}
+                    className="newslistings-link"
+                    target="_blank"
+                  >
                     {article.title}
                   </a>{" "}
                   <span id="newslistings-span">{article.source.name}</span>

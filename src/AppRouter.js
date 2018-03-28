@@ -7,10 +7,6 @@ class AppRouter extends Component {
   render() {
     return (
       <div>
-        {/* Links */}
-        {/* <Link to="/"></Link>
-        <Link to="/start"></Link> */}
-
         {/* Routes */}
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/jargonstein" component={App} />

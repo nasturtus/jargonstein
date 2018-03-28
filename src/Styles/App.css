@@ -1,11 +1,12 @@
 body {
-  background: whitesmoke;
+  background: white;
+  margin-top: 50px;
 }
 
 .app-grid-container {
   max-width: 1000px;
   min-height: 700px;
-  margin: 20px auto auto auto;
+  margin: 0 auto;
   padding: 40px;
   display: flex;
   flex-direction: column;

@@ -13,16 +13,15 @@ class LandingPage extends Component {
         <div className="grid-item">
           <img src="Assets/ape.jpg" alt="ape" />
         </div>
-        {/* <button className="landing-page-button" onClick={this.handleClick}>
-          <Link to="/jargonstein" className="landing-page-link"> Start Exploring</Link>
-        </button> */}
-        <Link to="/jargonstein" className="landing-page-link">
-          {" "}
-          <button className="landing-page-button" onClick={this.handleClick}>
+        <div>
+          <Link to="/jargonstein" className="landing-page-link">
             {" "}
-            Start Exploring
-          </button>
-        </Link>
+            <button className="landing-page-button" onClick={this.handleClick}>
+              {" "}
+              Start Exploring
+            </button>
+          </Link>
+        </div>
       </div>
     );
   }

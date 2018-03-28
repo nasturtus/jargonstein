@@ -1,7 +1,3 @@
-body {
-  background: whitesmoke;
-}
-
 .landing-page-grid-container {
   text-align: center;
   max-width: 1000px;
@@ -15,17 +11,15 @@ body {
 }
 
 .landing-page-button {
-  position: fixed;
   height: 50px;
   width: 200px;
-  top: 700px;
-  right: 350px;
   background: yellow;
   border: solid 5px black;
   color: black;
   font-size: 120%;
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
+  margin: 10px;
 }
 
 .landing-page-button:hover {

@@ -5,7 +5,6 @@ import LandingPage from "./LandingPage";
 describe("Testing LandingPage rendering", () => {
   const wrapper = shallow(<LandingPage />);
   it("should render Caption properly", () => {
-    console.log(wrapper.debug());
     expect(wrapper.find("Caption")).toHaveLength(1);
   });
   it("should render image properly", () => {
