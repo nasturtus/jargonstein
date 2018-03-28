@@ -8,14 +8,14 @@ import "./Styles/App.css";
 class App extends Component {
   render() {
     return (
-      <div className="grid-container">
-        <div className="grid-item">
+      <div className="app-grid-container">
+        <div className="app-grid-item">
           <Caption />
         </div>
-        <div className="grid-item-search">
+        <div className="app-grid-item-search">
           <Search />
         </div>
-        <div className="grid-item">
+        <div className="app-grid-item">
           <Jargon />
         </div>
       </div>

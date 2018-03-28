@@ -2,9 +2,15 @@
 
 const jargonList = [
   {
-    jargon: "mvp",
+    jargon: "lean canvas",
     explanation:
-      "A minimum viable product (MVP) is a development technique in which a new product or website is developed with sufficient features to satisfy early adopters. The final, complete set of features is only designed and developed after considering feedback from the product's initial users.",
+      "A 1-page business plan template created by that helps deconstruct an idea into its key assumptions using various basic building blocks.",
+    isFavourite: false
+  },
+  {
+    jargon: "quantitative easing",
+    explanation:
+      "It's when the central bank of a country buys securities from its member banks to add liquidity to the financial markets. This has the same effect as increasing the money supply. In return, the central bank issues credit to the banks' reserves to buy the securities.",
     isFavourite: false
   },
   {
@@ -37,12 +43,6 @@ const jargonList = [
     isFavourite: false
   },
   {
-    jargon: "net-neutrality",
-    explanation:
-      "The basic principle that prohibits internet service providers like AT&T, Comcast and Verizon from speeding up, slowing down or blocking any content, applications or websites you want to use.",
-    isFavourite: false
-  },
-  {
     jargon: "sales-funnel",
     explanation:
       "A sales funnel is an internet marketing method where potential customers are led through a series of events or actions that can be mapped out in the shape of funnel. The broadest level at the top of the funnel involves drawing users to your website, after which they move down the funnel where they’re offered services or resources if they sign up for your email list, until eventually they move to the bottom of the funnel and become a paying customer.",
@@ -52,12 +52,6 @@ const jargonList = [
     jargon: "growth-hacking",
     explanation:
       "Growth hacking is the creative use of technology (websites, marketing emails, apps) and analytics (data mining, A/B testing) in combination with product development to increase a company’s growth. Growth hacking focuses on lower cost marketing alternatives to traditional television, newspaper, and radio ads and is often used by startup companies looking to grow their business rapidly during their launch phase.",
-    isFavourite: false
-  },
-  {
-    jargon: "ab-testing",
-    explanation:
-      "A/B testing is the practice of comparing two versions of online content—websites, apps, marketing emails, etc.—in order to see which version performs better. The two versions (A and B) are presented to users at random in order to gauge reactions",
     isFavourite: false
   },
   {
@@ -93,12 +87,6 @@ const jargonList = [
     jargon: "derivative",
     explanation:
       "A contract whose value is based on the performance of an underlying financial asset, index, or another instrument (i.e., options and futures on various securities or commodities)",
-    isFavourite: false
-  },
-  {
-    jargon: "brain-dump",
-    explanation:
-      "To empty one's brain of any and all information relating to a particular subject.",
     isFavourite: false
   },
   {

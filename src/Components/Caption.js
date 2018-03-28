@@ -6,14 +6,14 @@ class Caption extends Component {
     super();
     this.state = {
       heading: "Jargonstein",
-      subheading: "a jargon buster for the clueless"
+      subheading: "a jargon buster for the curious & clueless"
     };
   }
 
   render() {
     return (
       <div>
-        <p>
+        <p className="caption-p">
           <caption-heading>{this.state.heading}.</caption-heading>
         </p>
         <p>

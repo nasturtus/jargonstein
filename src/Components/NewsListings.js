@@ -28,24 +28,25 @@ class NewsListings extends Component {
       <div className="grid-item-jargon-explanation-newsListings">
         <caption className="grid-item-jargon">{jargon}</caption>
         <caption className="grid-item-explanation">{explanation}</caption>
-        <p className="intro-line-to-listings">
-          Explore {jargon} further through these news articles...
+        <p>
+          Explore <span className="intro-line-to-listings">{jargon}</span>{" "}
+          further through these news articles...
         </p>
         <div className="grid-item-newsListings">
           {articles.map((article, index, arr) => {
             return (
               <div>
-                <li key={index} className="article">
-                  <a href={article.url} target="_blank">
+                <li key={index} className="newslistings-article">
+                  <a href={article.url} className="newslistings-link"target="_blank">
                     {article.title}
                   </a>{" "}
-                  from <span>{article.source.name}</span>.
+                  <span id="newslistings-span">{article.source.name}</span>
                 </li>
               </div>
             );
           })}
         </div>
-        <button className="button hover-float" onClick={this.handleClick}>
+        <button className="newslistings-button" onClick={this.handleClick}>
           Show Next
         </button>
       </div>

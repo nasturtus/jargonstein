@@ -19,10 +19,11 @@
   margin-bottom: 50px;
   font-family: "Titillium Web", sans-serif;
   font-weight: 300;
-  font-size: 150%;
+  font-size: 125%;
+  line-height: 120%;
 }
 
-button {
+.newslistings-button {
   position: fixed;
   height: 50px;
   width: 200px;
@@ -31,10 +32,38 @@ button {
   background: yellow;
   border: solid 5px black;
   color: black;
-  font-size: 100%;
+  font-size: 120%;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
 }
 
-button:hover {
+.newslistings-button:hover {
   background: black;
   color: yellow;
+}
+
+.grid-item-newsListings {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.newslistings-article {
+  font-weight: bold;
+}
+
+.grid-item-jargon-explanation-newsListings p {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.intro-line-to-listings {
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#newslistings-span {
+  font-weight: 300;
+}
+
+.newslistings:hover {
+  background: gray;
+  color: white;
 }

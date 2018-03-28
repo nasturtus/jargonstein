@@ -2,7 +2,7 @@ body {
   background: whitesmoke;
 }
 
-.grid-container {
+.app-grid-container {
   max-width: 1000px;
   min-height: 700px;
   margin: 20px auto auto auto;
@@ -15,6 +15,6 @@ body {
   box-shadow: 5px 5px rgb(10, 10, 10);
 }
 
-.grid-item-search {
+.app-grid-item-search {
   text-align: right;
 }
