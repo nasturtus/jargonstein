@@ -44,6 +44,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin: 10px;
+  cursor: pointer;
 }
 
 .landing-page-button:hover {
@@ -58,4 +59,20 @@
 a .landing-page-link:hover {
   text-decoration: none;
   color: white;
+}
+
+mentions {
+  color: yellow;
+  font-weight: bolder;
+}
+
+/* animation for blinking cursor */
+mentions {
+  animation: blinker 0.75s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
