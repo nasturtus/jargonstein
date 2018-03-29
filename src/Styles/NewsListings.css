@@ -37,6 +37,7 @@
   font-weight: 700;
   margin: 10px;
   align-self: center;
+  cursor: pointer;
 }
 
 .newslistings-button:hover {
