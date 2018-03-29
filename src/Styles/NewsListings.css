@@ -1,66 +1,66 @@
-* {
-  border: 100px;
-}
 .grid-item-jargon-explanation-newsListings {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: left;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px;
+  /* padding: 100px; */
 }
 
 .grid-item-jargon {
-  margin-top: 50px;
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   font-size: 200%;
+  color: yellow;
+  margin-bottom: 0;
 }
 
 .grid-item-explanation {
-  margin-top: 25px;
-  margin-bottom: 50px;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
+  color: white;
+  margin-top: 0;
+  line-height: 150%;
   font-size: 125%;
-  line-height: 120%;
 }
 
 .newslistings-button {
-  position: fixed;
-  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  height: 75px;
   width: 200px;
-  top: 700px;
-  right: 350px;
-  background: yellow;
-  border: solid 5px black;
-  color: black;
+  background: black;
+  border: solid 1px yellow;
+  color: yellow;
   font-size: 120%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  margin: 10px;
+  align-self: center;
 }
 
 .newslistings-button:hover {
-  background: black;
-  color: yellow;
-}
-
-.grid-item-newsListings {
-  font-family: "Titillium Web", sans-serif;
-}
-
-.newslistings-article {
-  font-weight: bold;
-}
-
-.grid-item-jargon-explanation-newsListings p {
-  font-family: "Titillium Web", sans-serif;
+  background: yellow;
+  color: black;
 }
 
 .intro-line-to-listings {
   font-weight: 700;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-top: 20px;
 }
 
-#newslistings-span {
-  font-weight: 300;
+.grid-item-newsListings {
+  border: solid 1px white;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 20px;
+  background: white;
+}
+
+.newslistings-link {
+  text-decoration: none;
 }
 
 .newslistings:hover {

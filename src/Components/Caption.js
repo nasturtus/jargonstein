@@ -6,7 +6,7 @@ class Caption extends Component {
     super();
     this.state = {
       heading: "Jargonstein",
-      subheading: "a jargon buster for the curious & clueless"
+      subheading: "A Jargon Buster for the Curious & Clueless"
     };
   }
 

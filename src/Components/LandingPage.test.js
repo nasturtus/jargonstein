@@ -7,9 +7,6 @@ describe("Testing LandingPage rendering", () => {
   it("should render Caption properly", () => {
     expect(wrapper.find("Caption")).toHaveLength(1);
   });
-  it("should render image properly", () => {
-    expect(wrapper.find("img")).toHaveLength(1);
-  });
   it("should render button properly", () => {
     expect(wrapper.find("button")).toHaveLength(1);
   });

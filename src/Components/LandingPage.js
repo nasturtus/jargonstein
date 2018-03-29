@@ -11,9 +11,11 @@ class LandingPage extends Component {
           <Caption />
         </div>
         <div className="grid-item">
-          <img src="Assets/ape.jpg" alt="ape" />
+          <p className="intro-copy">
+            Discover a new jargon. And find related news mentions.
+          </p>
         </div>
-        <div>
+        <div className="landingpage-button">
           <Link to="/jargonstein" className="landing-page-link">
             {" "}
             <button className="landing-page-button" onClick={this.handleClick}>

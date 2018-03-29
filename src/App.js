@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Caption from "./Components/Caption";
 import Jargon from "./Components/Jargon";
-import Search from "./Components/Search";
+// import Search from "./Components/Search";
 
 import "./Styles/App.css";
 
@@ -12,9 +12,9 @@ class App extends Component {
         <div className="app-grid-item">
           <Caption />
         </div>
-        <div className="app-grid-item-search">
+        {/* <div className="app-grid-item-search">
           <Search />
-        </div>
+        </div> */}
         <div className="app-grid-item">
           <Jargon />
         </div>

@@ -1,14 +1,15 @@
 caption-heading {
   font-family: "Croissant One", cursive;
-  font-size: 300%;
-  color: blue;
+  font-size: 350%;
+  color: bisque;
 }
 
 caption-subheading {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 125%;
   color: white;
   background: black;
   padding-left: 5px;
   padding-right: 5px;
 }
+

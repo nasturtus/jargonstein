@@ -1,9 +1,13 @@
 body {
-  background: white;
-  margin-top: 50px;
+  background: black;
 }
 
 .app-grid-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+}
+/* .app-grid-container {
   max-width: 1000px;
   min-height: 700px;
   margin: 0 auto;
@@ -14,8 +18,8 @@ body {
   background: yellow;
   border: 1px solid black;
   box-shadow: 5px 5px rgb(10, 10, 10);
-}
+} */
 
-.app-grid-item-search {
+/* .app-grid-item-search {
   text-align: right;
-}
+} */

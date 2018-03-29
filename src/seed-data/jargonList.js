@@ -4,7 +4,7 @@ const jargonList = [
   {
     jargon: "lean canvas",
     explanation:
-      "A 1-page business plan template created by that helps deconstruct an idea into its key assumptions using various basic building blocks.",
+      "A 1-page business plan template that helps deconstruct an idea into its key assumptions using various basic building blocks.",
     isFavourite: false
   },
   {
@@ -22,13 +22,13 @@ const jargonList = [
   {
     jargon: "impressions",
     explanation:
-      "Impressions are the number of times an online ad, article, video, or other piece of content has been “fetched” (or requested) from it’s source. Whenever social media content shows up in your web browser, it’s been fetched from its web server, and you’ve just helped make an impression.",
+      "Impressions are the number of times an online ad, article, video, or other piece of content has been “fetched” (or requested) from it’s source. Whenever social media content shows up in your web browser, you’ve just helped make an impression.",
     isFavourite: false
   },
   {
     jargon: "crispr",
     explanation:
-      "A genome editing tool allowing geneticists and medical researchers to add, remove, or alter sections of the DNA",
+      "A genome editing tool allowing geneticists and medical researchers to add, remove, or alter sections of the DNA.",
     isFavourite: false
   },
   {
@@ -43,15 +43,9 @@ const jargonList = [
     isFavourite: false
   },
   {
-    jargon: "sales-funnel",
-    explanation:
-      "A sales funnel is an internet marketing method where potential customers are led through a series of events or actions that can be mapped out in the shape of funnel. The broadest level at the top of the funnel involves drawing users to your website, after which they move down the funnel where they’re offered services or resources if they sign up for your email list, until eventually they move to the bottom of the funnel and become a paying customer.",
-    isFavourite: false
-  },
-  {
     jargon: "growth-hacking",
     explanation:
-      "Growth hacking is the creative use of technology (websites, marketing emails, apps) and analytics (data mining, A/B testing) in combination with product development to increase a company’s growth. Growth hacking focuses on lower cost marketing alternatives to traditional television, newspaper, and radio ads and is often used by startup companies looking to grow their business rapidly during their launch phase.",
+      "Growth hacking is the creative use of technology (websites, marketing emails, apps) and analytics (data mining, A/B testing) in combination with product development to increase a company’s growth, in particular, during its launch phase.",
     isFavourite: false
   },
   {
@@ -86,7 +80,7 @@ const jargonList = [
   {
     jargon: "derivative",
     explanation:
-      "A contract whose value is based on the performance of an underlying financial asset, index, or another instrument (i.e., options and futures on various securities or commodities)",
+      "A contract whose value is based on the performance of an underlying financial asset, index, or another instrument (i.e., options and futures on various securities or commodities).",
     isFavourite: false
   },
   {

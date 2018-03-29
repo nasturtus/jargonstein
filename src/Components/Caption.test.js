@@ -14,7 +14,7 @@ describe("Tests for Caption component", () => {
 
   it("Caption should render subheading properly", () => {
     expect(wrapper.find("caption-subheading").text()).toEqual(
-      "a jargon buster for the curious & clueless"
+      "A Jargon Buster for the Curious & Clueless"
     );
   });
 });
