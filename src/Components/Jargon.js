@@ -18,10 +18,6 @@ class Jargon extends Component {
   }
 
   render() {
-    console.log("in jargon / render");
-    console.log(this.state.jargonList[this.state.index].jargon);
-    console.log(this.state.jargonList[this.state.index].explanation);
-    console.log(this.state.articles);
     return (
       <div>
         <NewsListings
@@ -35,13 +31,10 @@ class Jargon extends Component {
   }
 
   generateNewJargon() {
-    console.log("in jargon / generate new jargon");
     const index = Math.floor(Math.random() * this.state.jargonList.length);
-    console.log("index: ", index);
     const jargon = this.state.jargonList[index].jargon.toUpperCase();
 
     let searchJargon = jargon + "&";
-    console.log("In jargon / fetch.. to generate articles for " + searchJargon);
     const url = "https://newsapi.org/v2/everything?q=";
     const apiKey = "1ac76a8ce51442738b51ba627fd92210";
     const pageSize = "5&";
@@ -76,6 +69,10 @@ class Jargon extends Component {
       "apiKey=" +
       apiKey;
 
+    this.fetchArticles(apiEndpoint, index);
+  }
+
+  fetchArticles(apiEndpoint, index) {
     fetch(apiEndpoint)
       .then(response => response.json())
       .then(json => json.articles)
