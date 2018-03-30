@@ -24,7 +24,7 @@ describe("NewsListings", () => {
       <NewsListings
         jargonIndex={jargonIndex}
         jargonList={jargonList}
-        onClick={mockHandler}
+        generateNewJargon={mockHandler}
         articles={articles}
       />
     );
