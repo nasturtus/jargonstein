@@ -1,7 +1,7 @@
 caption-heading {
   font-family: "Croissant One", cursive;
   font-size: 350%;
-  color: bisque;
+  color: yellow;
 }
 
 caption-subheading {
@@ -9,7 +9,10 @@ caption-subheading {
   font-size: 125%;
   color: white;
   background: black;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
+.caption-links {
+  text-decoration: none;
+}

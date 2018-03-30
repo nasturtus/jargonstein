@@ -1,3 +1,16 @@
+body {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .landing-page-grid-container {
   text-align: center;
   margin: 0 auto;
@@ -5,7 +18,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background: black;
+  background: transparent;
 }
 
 .intro-copy {
@@ -35,21 +48,27 @@
 }
 
 .landing-page-button {
-  height: 75px;
+  height: 50px;
   width: 200px;
-  background: black;
-  border: solid 1px yellow;
+  background: rgb(91, 3, 255);
+  border: none;
+  border-radius: 30px;
   color: yellow;
   font-size: 120%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin: 10px;
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .landing-page-button:hover {
   background: yellow;
   color: black;
+}
+
+.landing-page-button:focus {
+  outline: none;
 }
 
 .landing-page-link {
@@ -61,13 +80,8 @@ a .landing-page-link:hover {
   color: white;
 }
 
-mentions {
-  color: yellow;
-  font-weight: bolder;
-}
-
 /* animation for blinking cursor */
-mentions {
+.cursor {
   animation: blinker 0.75s linear infinite;
 }
 

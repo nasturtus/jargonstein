@@ -2,15 +2,6 @@ import React, { Component } from "react";
 import "../Styles/NewsListings.css";
 
 class NewsListings extends Component {
-  constructor() {
-    super();
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.props.onClick();
-  }
-
   render() {
     const jargon = this.props.jargonList[
       this.props.jargonIndex
@@ -43,7 +34,10 @@ class NewsListings extends Component {
             );
           })}
         </div>
-        <button className="newslistings-button" onClick={this.handleClick}>
+        <button
+          className="newslistings-button"
+          onClick={this.props.generateNewJargon}
+        >
           Show Next
         </button>
       </div>

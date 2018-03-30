@@ -19,14 +19,12 @@ class Jargon extends Component {
 
   render() {
     return (
-      <div>
-        <NewsListings
-          jargonList={this.state.jargonList}
-          jargonIndex={this.state.index}
-          articles={this.state.articles}
-          onClick={this.generateNewJargon}
-        />
-      </div>
+      <NewsListings
+        jargonList={this.state.jargonList}
+        jargonIndex={this.state.index}
+        articles={this.state.articles}
+        generateNewJargon={this.generateNewJargon}
+      />
     );
   }
 

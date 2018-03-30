@@ -12,13 +12,13 @@ class LandingPage extends Component {
           <Caption />
         </div>
         <div className="grid-item">
-          <Typing speed={30}>
+          <Typing>
             <p className="intro-copy">
-              Discover a new jargon. And find related news. <mentions className="span">|</mentions>
+              Discover a new jargon. And find related news mentions.{" "}
             </p>
           </Typing>
         </div>
-        <div className="landingpage-button">
+        <div>
           <Link to="/jargonstein" className="landing-page-link">
             {" "}
             <button className="landing-page-button" onClick={this.handleClick}>

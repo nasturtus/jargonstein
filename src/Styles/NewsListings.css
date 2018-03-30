@@ -3,16 +3,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   padding: 30px;
-  /* padding: 100px; */
 }
 
 .grid-item-jargon {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
-  font-size: 200%;
+  font-size: 150%;
   color: yellow;
   margin-bottom: 0;
 }
@@ -27,10 +27,11 @@
 .newslistings-button {
   position: absolute;
   bottom: 100px;
-  height: 75px;
+  height: 50px;
   width: 200px;
-  background: black;
-  border: solid 1px yellow;
+  background: rgb(91, 3, 255);
+  border: none;
+  border-radius: 30px;
   color: yellow;
   font-size: 120%;
   font-family: "Montserrat", sans-serif;
@@ -38,11 +39,16 @@
   margin: 10px;
   align-self: center;
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .newslistings-button:hover {
   background: yellow;
   color: black;
+}
+
+.newslistings-button:focus {
+  outline: none;
 }
 
 .intro-line-to-listings {
