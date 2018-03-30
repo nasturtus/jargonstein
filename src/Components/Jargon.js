@@ -1,3 +1,4 @@
+//Stateful Container Class Component
 import React, { Component } from "react";
 import jargonList from "../seed-data/jargonList";
 import NewsListings from "./NewsListings";
