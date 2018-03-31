@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 import "../Styles/NewsListings.css";
 
 const NewsListings = props => {
@@ -36,6 +38,13 @@ const NewsListings = props => {
       </button>
     </div>
   );
+};
+
+NewsListings.propTypes = {
+  jargonList: PropTypes.array.isRequired,
+  jargonIndex: PropTypes.number.isRequired,
+  articles: PropTypes.array.isRequired,
+  generateNewJargon: PropTypes.func.isRequired
 };
 
 export default NewsListings;
