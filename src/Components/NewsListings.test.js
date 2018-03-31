@@ -6,6 +6,7 @@ import jargonList from "../seed-data/jargonList";
 describe("NewsListings", () => {
   it("should call generateNewJargon on click", () => {
     const mockHandler = jest.fn();
+    
     // mock props to component NewsListings
     const jargonList = [
       {

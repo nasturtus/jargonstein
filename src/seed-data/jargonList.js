@@ -2,6 +2,11 @@
 
 const jargonList = [
   {
+    jargon: "crypto",
+    explanation: "A cryptocurrency like Bitcoin, Etheremum, Litecoin.",
+    isFavourite: false
+  },
+  {
     jargon: "lean canvas",
     explanation:
       "A 1-page business plan template that helps deconstruct an idea into its key assumptions using various basic building blocks.",

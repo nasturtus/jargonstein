@@ -1,7 +1,9 @@
-//Stateful Container Class Component
 import React, { Component } from "react";
-import jargonList from "../seed-data/jargonList";
 import NewsListings from "./NewsListings";
+
+// seed-data
+import jargonList from "../seed-data/jargonList";
+import newsSources from "../seed-data/newsSources";
 
 class Jargon extends Component {
   constructor() {
@@ -32,29 +34,17 @@ class Jargon extends Component {
   generateNewJargon() {
     const index = Math.floor(Math.random() * this.state.jargonList.length);
     const jargon = this.state.jargonList[index].jargon.toUpperCase();
+    const apiEndpoint = this.buildFetchQuery(jargon);
 
+    this.fetchArticles(apiEndpoint, index);
+  }
+
+  buildFetchQuery(jargon) {
     let searchJargon = jargon + "&";
     const url = "https://newsapi.org/v2/everything?q=";
     const apiKey = "1ac76a8ce51442738b51ba627fd92210";
     const pageSize = "5&";
-    const sources =
-      [
-        "bloomberg",
-        "new-york-times",
-        "new-scientist",
-        "axios",
-        "techradar",
-        "the-guardian-uk",
-        "the-telegraph",
-        "financial-post",
-        "the-economist",
-        "reuters",
-        "national-geographic",
-        "australian-financial-review",
-        "ars-technica",
-        "fortune",
-        "recode"
-      ].join(",") + "&";
+    const sources = newsSources.join(",") + "&";
 
     const apiEndpoint =
       url +
@@ -68,7 +58,7 @@ class Jargon extends Component {
       "apiKey=" +
       apiKey;
 
-    this.fetchArticles(apiEndpoint, index);
+    return apiEndpoint;
   }
 
   fetchArticles(apiEndpoint, index) {

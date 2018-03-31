@@ -1,5 +1,3 @@
-//Stateless Presentational Function Component
-
 import React from "react";
 import "../Styles/NewsListings.css";
 
@@ -11,10 +9,11 @@ const NewsListings = props => {
     <div className="grid-item-jargon-explanation-newsListings">
       <p className="grid-item-jargon">{jargon}</p>
       <p className="grid-item-explanation">{explanation}</p>
-      <p className="intro-line-to-listings">
-        Explore this jargon further through these news articles...
-      </p>
       <div className="grid-item-newsListings">
+        <p className="intro-line-to-listings">
+          Explore this jargon further through these news articles...
+        </p>
+
         {articles.map((article, index, arr) => {
           return (
             <div key={index}>
@@ -32,10 +31,7 @@ const NewsListings = props => {
           );
         })}
       </div>
-      <button
-        className="newslistings-button"
-        onClick={props.generateNewJargon}
-      >
+      <button className="newslistings-button" onClick={props.generateNewJargon}>
         Show Next
       </button>
     </div>
