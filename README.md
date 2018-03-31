@@ -4,15 +4,18 @@
 
 An app that randomly displays a jargon and related news mentions.
 
-The app uses seed data of jargons cobbled together from various sources. It uses the api provided by https://newsapi.org/ to retrieve news mentions related to a jargon.
+The app uses seed data of jargons cobbled together from various sources and does not purport to be authoritative. 
 
-More than being a complete app, therefore, this is an attempt to practise and incorporate fundamental concepts related to the following themes:
+It uses the api from https://newsapi.org/ to retrieve news mentions related to a jargon.
+
+More than being a complete app, therefore, this is an attempt to learn and incorporate fundamental concepts related to the following themes:
 
 * React development
-  * Stateful parent and stateless functional components
-  * PropTypes
+  * Stateful class containers vs stateless functional presentational components (quite a mouthful I agree!)
+  * Props and PropTypes
   * Modularity
   * Routing
+  * Fetch
 * Heroku deployment
 * Testing
 * Javascript coding and refactoring
@@ -48,7 +51,7 @@ Import the following:
 
 # Authors and Acknowledgments
 
-Developed by Santosh.S.N while at Jumpstart coding bootcamp with guidance from the following instructors and loads of support from the cohort:
+Developed as part of Jumpstart coding bootcamp, with loads of support from the cohort and guidance from the following instructors:
 
 https://github.com/songguoqiang
 https://github.com/davified

@@ -15,4 +15,10 @@ describe("Testing Jargon.js", () => {
       body: [{ name: "ABC Beer" }]
     });
   });
+
+  it("tests whether fetchArticles updates state given two values: apiEndpoint & index", () => {
+    const mockFetchArticles = jest.fn();
+    expect(mockFetchArticles).toHaveBeenCalled();
+
+  });
 });

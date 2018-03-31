@@ -32,7 +32,7 @@ class Jargon extends Component {
   }
 
   generateNewJargon() {
-    const index = Math.floor(Math.random() * this.state.jargonList.length);
+    const index = (this.state.index + 1)  % this.state.jargonList.length;
     const jargon = this.state.jargonList[index].jargon.toUpperCase();
     const apiEndpoint = this.buildFetchQuery(jargon);
 
