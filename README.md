@@ -26,7 +26,7 @@ This app was bootstrapped with [Create React App](https://github.com/facebookinc
 ## Getting Started
 
 To view the app, head over to:
-www.heroku.com ========
+https://limitless-fortress-43752.herokuapp.com/
 
 To get a copy of the project up and running on your local machine for development and testing purposes enter the following on the command line:
 
