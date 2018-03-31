@@ -1,58 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Jargonstein
 
-# Project Title
-One Paragraph of project description goes here
+![](public/Assets/jargonstein-landing-page.png)
 
-# Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+An app that randomly displays a jargon and related news mentions.
 
-# Prerequisites
-What things you need to install the software and how to install them
+The app uses seed data of jargons cobbled together from various sources. It uses the api provided by https://newsapi.org/ to retrieve news mentions related to a jargon.
 
-## Give examples
-Installing
-A step by step series of examples that tell you have to get a development env running
+More than being a complete app, therefore, this is an attempt to practise and incorporate fundamental concepts related to the following themes:
 
-Say what the step will be
+* React development
+  * Stateful parent and stateless functional components
+  * PropTypes
+  * Modularity
+  * Routing
+* Heroku deployment
+* Testing
+* Javascript coding and refactoring
+* CSS
 
-Give the example
-And repeat
+This app was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+## Getting Started
 
-## Running the tests
-Explain how to run the automated tests for this system
+To view the app, head over to:
+www.heroku.com ========
 
-Break down into end to end tests
-Explain what these tests test and why
+To get a copy of the project up and running on your local machine for development and testing purposes enter the following on the command line:
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+> git clone https://github.com/nasturtus/jargonstein.git
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+To run the app locally:
 
-# Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+> yarn start
 
-# Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+To run tests:
 
-# Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+> yarn test
+
+# Dependencies
+
+Import the following:
+
+* "react"
+* "react-router-dom"
+* "react-typing-animation"
+* "enzyme"
+
+# Authors and Acknowledgments
+
+Developed by Santosh.S.N while at Jumpstart coding bootcamp with guidance from the following instructors and loads of support from the cohort:
+
+https://github.com/songguoqiang
+https://github.com/davified
 
 # License
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
-# Acknowledgments
-Hat tip to anyone who's code was used
-Inspiration
-etc
+This project is licensed under the MIT License - see the LICENSE.md file for details
