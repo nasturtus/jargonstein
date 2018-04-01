@@ -5,13 +5,16 @@ import NewsListings from "./NewsListings";
 import jargonList from "../seed-data/jargonList";
 import newsSources from "../seed-data/newsSources";
 
+import "../Styles/Jargon.css";
+
 class Jargon extends Component {
   constructor() {
     super();
     this.state = {
       jargonList: jargonList,
       index: 0,
-      articles: []
+      articles: [],
+      loaded: false
     };
     this.generateNewJargon = this.generateNewJargon.bind(this);
   }
@@ -21,21 +24,27 @@ class Jargon extends Component {
   }
 
   render() {
+    if (this.state.loaded) {
+      return (
+        <NewsListings
+          jargonList={this.state.jargonList}
+          jargonIndex={this.state.index}
+          articles={this.state.articles}
+          generateNewJargon={this.generateNewJargon}
+        />
+      );
+    }
     return (
-      <NewsListings
-        jargonList={this.state.jargonList}
-        jargonIndex={this.state.index}
-        articles={this.state.articles}
-        generateNewJargon={this.generateNewJargon}
-      />
+      <img src="Assets/loading-icon.gif" alt="loading" className="loader" />
     );
   }
 
   generateNewJargon() {
-    const index = (this.state.index + 1)  % this.state.jargonList.length;
+    const index = (this.state.index + 1) % this.state.jargonList.length;
     const jargon = this.state.jargonList[index].jargon.toUpperCase();
     const apiEndpoint = this.buildFetchQuery(jargon);
 
+    this.setState({ loaded: false });
     this.fetchArticles(apiEndpoint, index);
   }
 
@@ -69,7 +78,8 @@ class Jargon extends Component {
         this.setState({
           jargonList: this.state.jargonList,
           index: index,
-          articles: articles
+          articles: articles,
+          loaded: true
         })
       )
       .catch(error => console.log(error));
