@@ -7,6 +7,12 @@ const jargonList = [
     isFavourite: false
   },
   {
+    jargon: "typeface",
+    explanation:
+      "A typeface is the collective name of a family of related fonts (such as Times New Roman), while fonts refer to the weights, widths, and styles that constitute a typeface (such as Times New Roman Regular, Italic, Bold, etc.).",
+    isFavourite: false
+  },
+  {
     jargon: "lean canvas",
     explanation:
       "A 1-page business plan template that helps deconstruct an idea into its key assumptions using various basic building blocks.",
