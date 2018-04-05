@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../Styles/LandingPage.css";
 import Typing from "react-typing-animation";
 
+// since this component only has a render() method, it can be simplified to become a functional component
 class LandingPage extends Component {
   render() {
     return (

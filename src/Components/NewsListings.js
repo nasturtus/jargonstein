@@ -18,6 +18,7 @@ const NewsListings = props => {
 
         {articles.map((article, index, arr) => {
           return (
+            // I think this component could be more readable if lines 22-34 (i.e. the Article) were extracted into its own component
             <div key={index}>
               <li className="newslistings-article">
                 <a
@@ -40,6 +41,7 @@ const NewsListings = props => {
   );
 };
 
+// nice use of propTypes validation!
 NewsListings.propTypes = {
   jargonList: PropTypes.array.isRequired,
   jargonIndex: PropTypes.number.isRequired,

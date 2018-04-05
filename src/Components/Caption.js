@@ -2,22 +2,17 @@ import React, { Component } from "react";
 import "../Styles/Caption.css";
 
 class Caption extends Component {
-  constructor() {
-    super();
-    this.state = {
-      heading: "Jargonstein",
-      subheading: "A Jargon Buster for the Curious & Clueless"
-    };
-  }
-
   render() {
     return (
       <div className="caption-div">
-          <p>
-            <caption-heading>{this.state.heading}</caption-heading>
+          <p> 
+            {/* I think you can just inline this.state.heading and this.state.subheading 
+            if you're not gonna pass these state variables down.
+            And then this can be a simple functional component  */}
+            <caption-heading>Jargonstein</caption-heading>
           </p>
           <p>
-            <caption-subheading>{this.state.subheading}</caption-subheading>
+            <caption-subheading>A Jargon Buster for the Curious & Clueless</caption-subheading>
           </p>
       </div>
     );
