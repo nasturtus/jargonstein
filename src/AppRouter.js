@@ -7,7 +7,6 @@ class AppRouter extends Component {
   render() {
     return (
       <div>
-        {/* Routes */}
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/jargonstein" component={App} />
       </div>

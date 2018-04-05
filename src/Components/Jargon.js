@@ -37,6 +37,7 @@ class Jargon extends Component {
     return (
       <img src="Assets/loading-icon.gif" alt="loading" className="loader" />
     );
+    // nice touch with the loading icon!
   }
 
   generateNewJargon() {
@@ -45,6 +46,7 @@ class Jargon extends Component {
     const apiEndpoint = this.buildFetchQuery(jargon);
 
     this.setState({ loaded: false });
+    // good job splitting a big method into smaller (and more readable methods)
     this.fetchArticles(apiEndpoint, index);
   }
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// nice attempt to include a search feature. I think this would be a really nice touch to your app. Do complete this feature when you have the time!
 class Search extends Component {
   constructor() {
     super();
